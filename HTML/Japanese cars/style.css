@@ -1,0 +1,315 @@
+body{
+	background-color: white;
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	line-height:1.0em;
+	margin:0;
+}
+
+.main{
+	margin:auto;
+	overflow:hidden;
+	background-color: #000000;
+}
+
+.container{
+	width: 95%;
+	margin:auto;
+	overflow:hidden;
+}
+
+.more{
+    overflow:hidden;
+    width: 95%;
+    margin: auto;
+    height: 35px;
+    width: 400px;
+}
+
+#main-header{
+	background-color:black;
+	color: white;	
+	text-align: center; 
+    -webkit-text-fill-color:rgb(136, 25, 170);
+    -webkit-text-stroke-width: 2px;
+	border-top: 4px solid rgb(136, 25, 170);
+}
+
+#navbar{
+	background-color: rgb(0, 0, 0);
+	color: white;
+	border-bottom: 5px solid rgb(130, 42, 156);
+}
+
+#navbar ul{
+	padding:0;
+    margin-top: 0px;
+}
+
+#navbar li{
+	display:inline;
+}
+
+#navbar a{
+	color: white;
+	text-decoration: none;
+    font-size:25px;
+}
+
+
+.tittle{
+    overflow:hidden;
+    margin: auto;
+    background-image:url(images/main2.jpg);
+	background-position:center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 400px;
+}
+
+#showcase {
+    background-color: rgb(235, 235, 235);
+    text-align:center; 
+	color: rgb(0, 0, 0);
+    -webkit-text-fill-color:rgb(255, 255, 255);
+    -webkit-text-stroke-width: 3.5px;
+	font-size:35px;
+	line-height: 2.0em;
+}
+
+
+#main h1{
+	color: white;	
+    -webkit-text-fill-color:rgb(136, 25, 170);
+    -webkit-text-stroke-width: 1px;
+}
+
+#main h2{
+	color: rgb(136, 25, 170);
+	font-size:40px;
+}
+
+#main{
+	float:left;
+	width:65%;
+	padding-right:25px;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	font-size:30px;
+	padding-left: 2.5%;
+}
+
+
+#sidebar-text{
+	float:left;
+	width:32%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+    font-size:30px;
+	line-height: 1.2em;
+	background: rgb(136, 25, 170);
+	border: 3px solid rgb(136, 25, 170);
+	margin-top: 2.5%;
+	margin-left: 0.5%;
+	margin-bottom: 2.5%;
+}
+
+#Silvia-image{
+	background-image:url("images/Silvia.jpg");
+	background-size: 600px, 300px, contain;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 31.5%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 2.5%;
+	margin-bottom: 1%;
+}
+
+#Supra-image{
+	background-image:url("images/Supra.jpg");
+	background-size: 625px, 350px, cover;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 31.5%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 2.5%;
+	margin-bottom: 1%;
+}
+
+#Honda-image{
+	background-image:url("images/Honda.jpg");
+	background-size: 600px, 300px, contain;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 31.5%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 2.5%;
+	margin-bottom: 1%;
+}
+
+#Mitsubishi-image{
+	background-image:url("images/Mitsubishi.jpg");
+	background-size: 600px, 300px, contain;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 31.5%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 2.5%;
+	margin-bottom: 1%;
+}
+
+#Suzuki-image{
+	background-image:url("images/Suzuki.jpg");
+	background-size: 600px, 300px, contain;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 31.5%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 2.5%;
+	margin-bottom: 1%;
+}
+
+#Subaru-image{
+	background-image:url("images/Subaru.jpg");
+	background-size: 600px, 300px, contain;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 31.5%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 2.5%;
+	margin-bottom: 1%;
+}
+
+#Skyline-image{
+	background-image:url("images/Skyline.jpg");
+	background-size: 600px, 300px, contain;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 31.5%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 2.5%;
+	margin-bottom: 1%;
+}
+
+#Miata-image{
+	background-image:url("images/Miata.jpg");
+	background-size: 600px, 300px, contain;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 31.5%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 2.5%;
+	margin-bottom: 1%;
+}
+#Lancer-image{
+	background-image:url("images/Lancer.jpg");
+	background-size: 600px, 300px, contain;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 31.5%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 2.5%;
+}
+
+
+#main2{
+	padding-right:25px;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	font-size:30px;
+	padding-left: 2.5%;
+}
+
+#main2 h1{
+	color: white;	
+    -webkit-text-fill-color:rgb(136, 25, 170);
+    -webkit-text-stroke-width: 1px;
+}
+
+#MNC-image{
+	background-image:url("images/MNC.jpg");
+	background-size: 625px, 350px, cover;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 34%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:left;
+	margin-left: 15%;
+}
+
+#NFS-image{
+	background-image:url("images/NFS.jpg");
+	background-size: 610px, 350px, cover;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 34%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float:right;
+	margin-right: 15%;
+	margin-bottom: 2.5%;
+}
+
+#JDM1-image{
+	background-image:url("images/JDM1.jpg");
+	background-size: 575px, 350px, cover;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 32%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float: left;
+}
+
+#JDM2-image{
+	background-image:url("images/JDM2.jpg");
+	background-size: 615px, 300px, cover;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 32%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float: left;
+	margin-left: 1%;
+}
+
+#JDM3-image{
+	background-image:url("images/JDM3.jpg");
+	background-size: 575px, 350px, cover;
+	background-position: center;
+	background-repeat: repeat-x;
+	width: 32%;
+	height: 300px;
+	border: 5px solid rgb(136, 25, 170);
+	float: left;
+	margin-left: 1%;
+}
+
+#main-footer{
+	background-color: rgb(0, 0, 0);
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	border-top: 5px solid rgb(136, 25, 170);
+	border-bottom: 5px solid rgb(136, 25, 170);
+}

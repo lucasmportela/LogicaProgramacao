@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+  }
+   
+  .container {
+    margin: auto;
+    width: 600px;
+    overflow: auto;
+    padding: 1rem;
+  }
+#nav-bar{
+	background-color: black;
+	color: white;	
+    text-align: center; 
+}
+
+#my-form {
+    padding: 2rem;
+    background: #f4f4f4;
+  }
+  
+  #my-form label {
+    display: block;
+  }
+  
+  #my-form input[type='text'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }

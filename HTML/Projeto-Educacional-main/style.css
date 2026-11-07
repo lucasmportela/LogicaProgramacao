@@ -1,0 +1,190 @@
+* {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+
+  width: 600px;
+  height: 620px;
+  left: 62px;
+  top: 64px;
+
+  margin: 80px;
+  border-radius: 50px;
+  background: linear-gradient(
+    145.36deg,
+    rgba(244, 244, 244, 0.4) -4.23%,
+    rgba(244, 244, 244, 0.2) 102.58%
+  );
+  backdrop-filter: blur(20px);
+}
+
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  width: 310px;
+  height: 80px;
+  left: 265px;
+  top: 120px;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 78px;
+  color: #ffffff;
+}
+
+.home p {
+  width: 287px;
+  height: 24px;
+  left: 276px;
+  top: 198px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+
+  margin-bottom: 30px;
+}
+
+.login a {
+  color: green;
+}
+
+form {
+  width: 100%;
+  max-width: 350px;
+}
+
+div.input-sigle {
+  width: 100%;
+  margin: 6px 0;
+  position: relative;
+}
+
+div.input-sigle label {
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  color: rgb(150, 150, 150);
+  transition: 0.5s ease-in-out;
+  cursor: text;
+  top: 5px;
+}
+
+div.input-sigle input {
+  width: 100%;
+  padding: 5px;
+  transition: 0.5s ease-in-out;
+  border: 0;
+  border-bottom: 2px solid rgb(200, 200, 200);
+  outline: 0;
+  font-size: 16px;
+
+  background: linear-gradient(
+    145.36deg,
+    rgba(244, 244, 244, 0.4) -4.23%,
+    rgba(244, 244, 244, 0.2) 102.58%
+  );
+  backdrop-filter: blur(20px);
+}
+
+div.input-sigle input:focus,
+div.input-sigle input:valid {
+  border-bottom: 2px solid cornflowerblue;
+}
+
+div.input-sigle input:focus ~ label,
+div.input-sigle input:valid ~ label {
+  transform: translateY(-34px);
+  color: cornflowerblue;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+
+  width: 290px;
+  height: 50px;
+  left: 232px;
+  top: 576px;
+  background-color: lightgreen;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.button a {
+  color: #696969;
+  width: 62px;
+  height: 25px;
+  left: 346px;
+  top: 589px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.button:hover {
+  background-color: white;
+  transition: background 200ms;
+}
+
+div.custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+div.custom p {
+  position: absolute;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  width: 145px;
+  height: 26px;
+}
+
+.end .orSignUp {
+  display: flex;
+  left: 250px;
+}
+
+div.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-image: none;
+    background-color: white;
+  }
+  .home h1,
+  .home p,
+  div.custom p,
+  div.input-sigle input {
+    color: black;
+  }
+}

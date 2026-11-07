@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (){
+
+    char operacao[20];
+    int num1;
+    int num2;
+    int result = 0;
+    
+    
+    printf("Digite o primeiro número\n");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo número\n");
+    scanf("%d", &num2);
+
+    printf("Digite a operação soma | subtracao | divisao | multiplicacao");
+    scanf("%c", &operacao);
+
+    if (operacao == "soma" )
+    {
+    
+      result = num1 + num2;
+
+    }
+    if (operacao == "subtracao" )
+    {
+    
+        result = num1 - num2;
+
+    }
+    if (operacao == "divisao")
+    {
+    
+        result = num1 / num2;
+
+    }
+    if (operacao == "multiplicacao")
+    {
+    
+        result = num1 * num2;
+    
+    }
+
+    printf("Resultado da operação: %d\n",result);
+    return 0;
+    
+}

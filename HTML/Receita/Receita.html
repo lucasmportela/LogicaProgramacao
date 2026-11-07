@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Receita de espaguete cremoso com limão, alho e parmesão.">
+	<title>Fio & Fogo | Espaguete cremoso</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<style>
+		:root {
+			--cream: #f7f3eb;
+			--ink: #20231f;
+			--muted: #6f736a;
+			--tomato: #c8553d;
+			--sage: #667b63;
+			--line: #ded8ca;
+		}
+
+		* { box-sizing: border-box; }
+		body { margin: 0; color: var(--ink); background: var(--cream); font-family: "DM Sans", sans-serif; }
+		a { color: inherit; text-decoration: none; }
+		.site-header { max-width: 1160px; margin: auto; padding: 28px 28px 18px; display: flex; align-items: center; justify-content: space-between; }
+		.brand { font: 700 25px "Playfair Display", serif; letter-spacing: .02em; }
+		.brand span { color: var(--tomato); }
+		nav { display: flex; gap: 30px; color: var(--muted); font-size: 14px; }
+		nav a:hover { color: var(--tomato); }
+		main { max-width: 1160px; margin: auto; padding: 46px 28px 80px; }
+		.eyebrow { color: var(--tomato); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; }
+		.hero { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(38px, 7vw, 96px); align-items: center; }
+		h1 { max-width: 540px; margin: 17px 0 20px; font: 700 clamp(43px, 5vw, 70px)/.98 "Playfair Display", serif; letter-spacing: -.03em; }
+		.intro { max-width: 460px; color: var(--muted); font-size: 17px; line-height: 1.7; }
+		.details { display: flex; gap: 28px; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--line); }
+		.detail strong { display: block; font: 700 21px "Playfair Display", serif; }
+		.detail small { color: var(--muted); font-size: 12px; }
+		.hero-image { position: relative; }
+		.hero-image img { display: block; width: 100%; aspect-ratio: 1.08; object-fit: cover; border-radius: 3px; filter: saturate(.9); }
+		.image-note { position: absolute; right: -18px; bottom: 25px; width: 112px; height: 112px; display: grid; place-items: center; padding: 15px; border-radius: 50%; color: #fff; background: var(--sage); font: 600 13px/1.2 "Playfair Display", serif; text-align: center; transform: rotate(9deg); }
+		.recipe { display: grid; grid-template-columns: 1fr 1.45fr; gap: 70px; margin-top: 100px; padding-top: 42px; border-top: 1px solid var(--line); }
+		h2 { margin: 0 0 25px; font: 700 34px "Playfair Display", serif; }
+		.ingredients { padding-right: 25px; border-right: 1px solid var(--line); }
+		.ingredient { display: flex; justify-content: space-between; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+		.ingredient span { color: var(--muted); }
+		.steps { counter-reset: steps; }
+		.step { display: grid; grid-template-columns: 42px 1fr; gap: 18px; margin-bottom: 27px; }
+		.step::before { counter-increment: steps; content: counter(steps, decimal-leading-zero); color: var(--tomato); font-size: 13px; font-weight: 700; padding-top: 4px; }
+		.step h3 { margin: 0 0 7px; font-size: 16px; }
+		.step p { margin: 0; color: var(--muted); line-height: 1.65; font-size: 15px; }
+		.tip { margin-top: 45px; padding: 22px 25px; background: #e6e9dc; border-left: 4px solid var(--sage); }
+		.tip strong { display: block; margin-bottom: 5px; font: 700 17px "Playfair Display", serif; }
+		.tip p { margin: 0; color: #586154; font-size: 14px; line-height: 1.6; }
+		footer { padding: 25px 28px; border-top: 1px solid var(--line); color: var(--muted); text-align: center; font-size: 13px; }
+		@media (max-width: 720px) {
+			.site-header { padding: 22px 20px 10px; }
+			nav { gap: 14px; font-size: 12px; }
+			main { padding: 35px 20px 60px; }
+			.hero, .recipe { grid-template-columns: 1fr; gap: 40px; }
+			.hero-image { order: -1; }
+			.image-note { right: -7px; bottom: 15px; width: 90px; height: 90px; font-size: 11px; }
+			.recipe { margin-top: 65px; padding-top: 30px; }
+			.ingredients { padding-right: 0; border-right: 0; }
+		}
+	</style>
+</head>
+<body>
+	<header class="site-header">
+		<a class="brand" href="#top">Fio <span>&</span> Fogo</a>
+		<nav aria-label="Navegação principal"><a href="#receita">Receita</a><a href="#dica">Dica do chef</a></nav>
+	</header>
+
+	<main id="top">
+		<section class="hero" aria-labelledby="titulo">
+			<div>
+				<div class="eyebrow">Massa da semana · fácil</div>
+				<h1 id="titulo">Espaguete cremoso de limão & parmesão</h1>
+				<p class="intro">Poucos ingredientes, uma panela e aquele perfume cítrico que faz a cozinha inteira parar para jantar.</p>
+				<div class="details" aria-label="Informações da receita">
+					<div class="detail"><strong>20 min</strong><small>preparo total</small></div>
+					<div class="detail"><strong>02</strong><small>porções</small></div>
+					<div class="detail"><strong>Fácil</strong><small>nível</small></div>
+				</div>
+			</div>
+			<div class="hero-image">
+				<img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=85" alt="Prato de espaguete com molho cremoso e ervas">
+				<div class="image-note">feito para<br>compartilhar</div>
+			</div>
+		</section>
+
+		<section class="recipe" id="receita">
+			<div class="ingredients">
+				<h2>O que você vai usar</h2>
+				<div class="ingredient"><span>Espaguete</span><strong>200 g</strong></div>
+				<div class="ingredient"><span>Manteiga</span><strong>2 colheres</strong></div>
+				<div class="ingredient"><span>Alho picado</span><strong>2 dentes</strong></div>
+				<div class="ingredient"><span>Creme de leite</span><strong>200 ml</strong></div>
+				<div class="ingredient"><span>Parmesão ralado</span><strong>½ xícara</strong></div>
+				<div class="ingredient"><span>Limão siciliano</span><strong>1 unidade</strong></div>
+				<div class="ingredient"><span>Sal, pimenta e salsinha</span><strong>a gosto</strong></div>
+			</div>
+			<div class="method">
+				<h2>Como fazer</h2>
+				<div class="steps">
+					<div class="step"><div><h3>Cozinhe a massa</h3><p>Ferva água bem salgada e cozinhe o espaguete até ficar al dente. Reserve uma xícara da água do cozimento antes de escorrer.</p></div></div>
+					<div class="step"><div><h3>Comece o molho</h3><p>Na mesma panela, derreta a manteiga em fogo médio. Junte o alho e mexa por 1 minuto, só até perfumar.</p></div></div>
+					<div class="step"><div><h3>Deixe cremoso</h3><p>Acrescente o creme de leite, as raspas e o suco do limão. Volte com a massa e misture, adicionando a água reservada aos poucos.</p></div></div>
+					<div class="step"><div><h3>Finalize e sirva</h3><p>Desligue o fogo, incorpore o parmesão e tempere com pimenta. Finalize com salsinha e mais raspas de limão.</p></div></div>
+				</div>
+				<div class="tip" id="dica"><strong>Dica do chef</strong><p>O segredo é terminar a massa dentro do molho: o amido da água deixa tudo brilhante e bem envolvido.</p></div>
+			</div>
+		</section>
+	</main>
+	<footer>Fio & Fogo · comida simples, feita com tempo e vontade.</footer>
+</body>
+</html>

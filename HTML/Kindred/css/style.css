@@ -1,0 +1,169 @@
+body{
+	background-color: rgb(0, 0, 0);
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	line-height:1.0em;
+	margin:0;
+}
+
+.container{
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+
+#main-header{
+	background-color:midnightblue;
+	color: white;	
+	text-align: center; 
+}
+
+#navbar{
+	background-color:#333;
+	color:#fff;
+	text-align: center;
+}
+
+#navbar ul{
+	padding:0;
+	list-style: none;
+}
+
+
+#navbar li{
+	display:inline;
+}
+
+#navbar a{
+	color:#fff;
+	text-decoration: none;
+	font-size:18px;
+	padding-right:10px;
+}
+
+.tittle{
+	width:45%;
+	margin:auto;
+	overflow:hidden;
+}
+
+#showcase{
+	background-image:url('../images/Kindred.jpg');
+	background-position:center;
+	min-height:800px;
+	min-width: 500px;
+	margin-bottom:15px;
+	text-align: center;
+}
+
+#showcase h1{
+	color: #DEAC00;
+	font-size:70px;
+	line-height: 1.0em;
+	padding-top:250px;
+}
+
+#showcase h2{
+	font-size:30px;
+	line-height: 1.0em;
+	padding:10px;
+	color: white;
+	background-color: black;
+}
+
+#main h1{
+	color: #c8aa6e;
+	font-size:50px;
+}
+
+
+#main{
+	float:left;
+	width:70%;
+	
+	padding-right:25px;
+	box-sizing: border-box;
+	color: white;
+	font-size:20px;
+}
+
+#sidebar{
+	float:right;
+	width:30%;
+	background: #c8aa6e;
+	color: white;
+	padding:15px;
+	line-height: 1.2em;
+	box-sizing: border-box;
+}
+
+@media(max-width:600px){
+	#main{
+		width:100%;
+		float:none;
+	}
+
+	#sidebar{
+		width:100%;
+		float:none;
+	}
+}
+
+#more h1{
+	color: #c8aa6e;
+	font-size:50px;
+}
+#more{
+	box-sizing: border-box;
+	color: white;
+	font-size:20px;
+}
+
+#mask{
+	float:left;
+	width:60%;
+	padding-right:25px;
+	box-sizing: border-box;
+	color: white;
+	font-size:20px;
+}
+
+#mask h1{
+	color: #c8aa6e;
+	font-size:50px;
+}
+
+#maskpic{
+	float:right;
+	width:30%;
+	box-sizing: border-box;
+}
+
+#mark{
+	float:left;
+	width:60%;
+	padding-right:25px;
+	box-sizing: border-box;
+	color: white;
+	font-size:20px;
+}
+
+#mark h1{
+	color: #c8aa6e;
+	font-size:50px;
+}
+
+#markpic{
+	float:right;
+	width:30%;
+	box-sizing: border-box;
+}
+
+#main-footer{
+	background: #333;
+	color:#fff;
+	text-align: center;
+	padding:20px;
+	margin-top:40px;
+}

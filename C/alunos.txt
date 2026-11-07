@@ -1,0 +1,79 @@
+
+ Nome:Lucas
+
+ Nota:0.00
+
+ Nome:lucas
+
+ Nota:0.00
+
+ Nome:lucas
+
+ Nota:0.00
+
+ Nome:lucas
+
+ Nota:0.00
+
+ Nome:lucas
+
+ Nota:4201024
+
+ Nome:lucas
+
+ nota:0.00
+
+ Nome:lucas
+
+ nota:0.00
+
+ Nome:lucas
+
+ nota:0.00
+
+ Nome:10.00
+
+ nota:0.00
+
+ Nome:lucas
+
+ nota:0.00
+
+Nome: lucas 
+Nota=0.0 
+
+Nome: lucas 
+Nota=0.0 
+
+Nome: lucas 
+Nota=9.50 
+
+Nome: asjasdklashdka 
+Nota=9.50 
+
+Nome: Lucass 
+Nota=99.00 
+
+Nome: cd 
+Nota=0.00 
+
+Nome: dsadad 
+Nota=23.00 
+
+Nome: dasedd 
+Nota=22.00 
+
+Nome: dsadas 
+Nota=2.00 
+
+Nome: lucas 
+Nota=10.00 
+
+Nome: Lucas 
+Nota=10.00 
+
+Nome: Lucas[ 
+Nota=9.00 
+
+Nome: Lucas 
+Nota=10.00 
