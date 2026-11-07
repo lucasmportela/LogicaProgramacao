@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas.m\\Documents\\log-prog\\C#\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
+      "projectUniqueName": "C:\\Users\\lucas.m\\Documents\\LogicaProgramacao\\CSharp\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
       "projectName": "Lanchonete",
-      "projectPath": "C:\\Users\\lucas.m\\Documents\\log-prog\\C#\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
+      "projectPath": "C:\\Users\\lucas.m\\Documents\\LogicaProgramacao\\CSharp\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
       "packagesPath": "C:\\Users\\lucas.m\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas.m\\Documents\\log-prog\\C#\\Lanchonete\\Lanchonete\\obj\\",
+      "outputPath": "C:\\Users\\lucas.m\\Documents\\LogicaProgramacao\\CSharp\\Lanchonete\\Lanchonete\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lucas.m\\AppData\\Roaming\\NuGet\\NuGet.Config"

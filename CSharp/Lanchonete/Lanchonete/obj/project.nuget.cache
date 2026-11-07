@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GsCb5NJ7aS8=",
+  "dgSpecHash": "AyooOiILCs8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lucas.m\\Documents\\log-prog\\C#\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
+  "projectFilePath": "C:\\Users\\lucas.m\\Documents\\LogicaProgramacao\\CSharp\\Lanchonete\\Lanchonete\\Lanchonete.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas.m\\.nuget\\packages\\microsoft.netcore.app.ref\\3.0.0\\microsoft.netcore.app.ref.3.0.0.nupkg.sha512",
     "C:\\Users\\lucas.m\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.0.0\\microsoft.windowsdesktop.app.ref.3.0.0.nupkg.sha512",
