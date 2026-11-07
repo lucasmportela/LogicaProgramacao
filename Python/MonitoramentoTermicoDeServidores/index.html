@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rack Monitor | Data Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">🖥️ RACK MONITOR</div>
+            <span class="online">● ONLINE</span>
+        </div>
+        <p>DATA CENTER · THERMAL CONTROL</p>
+        <h1>Painel de Controle Térmico</h1>
+        <p>Monitoramento de temperatura dos servidores em rack.</p>
+    </header>
+
+    <main>
+        <section class="stats">
+            <div class="stat-card">
+                <h2>03</h2>
+                <p>Racks</p>
+            </div>
+            <div class="stat-card">
+                <h2>09</h2>
+                <p>Sensores</p>
+            </div>
+            <div class="stat-card">
+                <h2>10–90°C</h2>
+                <p>Faixa permitida</p>
+            </div>
+        </section>
+
+        <section class="panel">
+            <h2>Entrada de temperaturas</h2>
+            <p class="subtitle">
+                Informe as temperaturas de cada sensor em graus Celsius.
+            </p>
+
+            <div id="racks" class="rack-container"></div>
+
+            <button onclick="calcular()">Calcular resultados</button>
+            <button class="secondary" onclick="limpar()">Limpar</button>
+
+            <p id="mensagem" class="message"></p>
+        </section>
+
+        <section id="resultados" class="panel hidden">
+            <h2>Resultados da análise</h2>
+
+            <div id="alerta"></div>
+
+            <div class="critical-card">
+                <p>MAIOR TEMPERATURA REGISTRADA</p>
+                <h1 id="maiorTemperatura">-- °C</h1>
+                <p id="localizacao"></p>
+            </div>
+
+            <h3>Temperatura média por rack</h3>
+            <div id="medias"></div>
+
+            <h3>Matriz completa de temperaturas</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rack</th>
+                            <th>Sensor 0</th>
+                            <th>Sensor 1</th>
+                            <th>Sensor 2</th>
+                        </tr>
+                    </thead>
+                    <tbody id="matriz"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        RACK MONITOR v1.0 · SISTEMA DE AUDITORIA TÉRMICA
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

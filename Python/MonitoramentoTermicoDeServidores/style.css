@@ -1,0 +1,263 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #101d32;
+    color: white;
+    padding: 30px 8%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.online {
+    color: #4ade80;
+    font-size: 13px;
+}
+
+header p {
+    color: #a9bed5;
+    margin-top: 12px;
+}
+
+header h1 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card, .panel {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+.stat-card h2 {
+    color: #168bc1;
+    font-size: 28px;
+}
+
+.stat-card p {
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.panel {
+    margin-bottom: 25px;
+}
+
+.panel h2 {
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.rack-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.rack-card h3 {
+    margin-bottom: 15px;
+    color: #168bc1;
+}
+
+.sensor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.sensor label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.sensor input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.sensor input:focus {
+    outline: 2px solid #168bc1;
+    border-color: transparent;
+}
+
+button {
+    background: #168bc1;
+    color: white;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #0879a9;
+}
+
+button.secondary {
+    background: #64748b;
+}
+
+.message {
+    margin-top: 12px;
+    color: #dc2626;
+}
+
+.hidden {
+    display: none;
+}
+
+.critical-card {
+    background: #eaf4fb;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.critical-card p {
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+.critical-card h1 {
+    color: #168bc1;
+    font-size: 35px;
+}
+
+.critical-card .danger {
+    color: #dc2626;
+}
+
+.alert {
+    background: #fee2e2;
+    border: 1px solid #f87171;
+    color: #b91c1c;
+    padding: 18px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.success {
+    background: #dcfce7;
+    color: #166534;
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.mean-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.mean-card strong {
+    color: #168bc1;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+th {
+    background: #101d32;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 25px 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .stats {
+        gap: 8px;
+    }
+
+    .stat-card {
+        padding: 15px 8px;
+    }
+
+    .stat-card h2 {
+        font-size: 19px;
+    }
+
+    .sensor-grid {
+        gap: 8px;
+    }
+
+    .sensor input {
+        padding: 10px 5px;
+    }
+}
