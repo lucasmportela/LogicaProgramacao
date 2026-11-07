@@ -1,0 +1,9 @@
+# Crie uma função chamada registrar_acesso(usuario) que recebe o nome de
+# um usuário e anexa esse registro no arquivo acessos.log.
+# a. se o arquivo não existir, o Python deve criá-lo;
+# b. se já existir, as novas informações devem ser inseridas no final, preservando o
+# histórico existente.
+def registrar_acesso(usuario):
+    with open("acessos.log", "a", encoding="utf-8") as arquivo:
+        arquivo.write(usuario + "\n")
+registrar_acesso('Um usuário')

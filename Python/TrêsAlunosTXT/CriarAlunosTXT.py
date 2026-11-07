@@ -1,0 +1,7 @@
+# Escreva um programa que solicite ao usuário o nome de três alunos. O script
+# deve salvar esses nomes em um arquivo chamado alunos.txt, gravando um
+# nome por linha. Caso o arquivo já exista, ele deve ser recriado do zero.
+with open("alunos.txt", "w", encoding="utf-8") as arquivo:
+    for i in range(3):
+        aluno = input(f"Digite o nome do {i + 1}º aluno: ")
+        arquivo.write(aluno + "\n")

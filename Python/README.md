@@ -1,0 +1,102 @@
+# Python
+
+Exercícios e projetos desenvolvidos em **Python**.
+
+## Conteúdo
+
+- `AcimaDaMedia/`
+- `AdivinharNúmero/`
+- `AlgorítmosDeOrdenação/`
+- `Almoxarifado/`
+- `AnaliseDeDesempenhoDeEscola/`
+- `AnaliseTemperaturaSemana/`
+- `Arquivos/`
+- `Arvore/`
+- `AteCem/`
+- `AV1/`
+- `BairroOrdemAlfabetica/`
+- `BancoPython/`
+- `BoletimCSV/`
+- `BuscaElemento/`
+- `CadastroFuncionarioEscola/`
+- `CalculadoraFunção/`
+- `CalculadoraPython/`
+- `ConfiBancoTupla/`
+- `ContaBancaria/`
+- `ContagemRegressiva/`
+- `ControleDePermissõesDeAcesso/`
+- `DescontoProduto/`
+- `DetectaçãoDeEntrada/`
+- `DezAteZero/`
+- `Dicionario/`
+- `Fatorial/`
+- `FiboDeZeroAteDoisMil/`
+- `Fibonacci/`
+- `FilaDeTarefaDeSistemas/`
+- `FormularioWebDespadronizado/`
+- `FrequênciaElementoEmLista/`
+- `IdadeAte2040/`
+- `IMC/`
+- `InversaoDeVetor/`
+- `InversãoMatriz/`
+- `Jogo/`
+- `ListaEmails/`
+- `Loja/`
+- `LojaDeRoupas/`
+- `MaiorDeIdade/`
+- `MaiorDeIdadeClasse/`
+- `MaiorEMenor/`
+- `MaiorOuMenorIndice/`
+- `MaiorQueDez/`
+- `MaiorTresNumeros/`
+- `MaisNovo/`
+- `Maquinario/`
+- `Matrizes/`
+- `MediaCincoAlunos/`
+- `MediaDezNumeros/`
+- `MediaEContagem/`
+- `MediaNota/`
+- `MediaNotaDezAlunos/`
+- `ModuloDeTriagemDeRecrutamento/`
+- `MonitoramentoEficiênciaDeFrotas/`
+- `MonitoramentoTermicoDeServidores/`
+- `NomeCidade/`
+- `NotaAlunoPrivate/`
+- `NotaZeroAteDez/`
+- `NumeroAoCubo/`
+- `NumeroAoQuadrado/`
+- `NumeroÍmparesVetor/`
+- `OrdemCrescente/`
+- `PadrãoTexto/`
+- `ParAteZero/`
+- `ParOuImpar/`
+- `ParOuImparSeteNumeros/`
+- `PedraPapelTesoura/`
+- `PlantaIndustrialCaixa/`
+- `PortasLogicas/`
+- `ProcessamentoDePonteDeVenda/`
+- `ProgramasGráficos/`
+- `RegistrarAcessoTXT/`
+- `RendaMensal/`
+- `ReposiçãoAlmoxarifado/`
+- `SalarioAumentoDe15%/`
+- `SalarioDesconto/`
+- `Saudacoes/`
+- `SistemaCorporativo/`
+- `SistemaDeAutenticação/`
+- `SistemaDeMonitoramentoDeBateria/`
+- `SistemaFaturamentoComercial/`
+- `somaDoisNumerosFunção/`
+- `SomatorioCondicional/`
+- `SubprogramasAninhados/`
+- `SubstituicaoValoresNegativos/`
+- `Tabuada/`
+- `TresValoresNumericos/`
+- `TrêsAlunosTXT/`
+- `VendasBruto/`
+
+## Execução
+
+Consulte o README de cada projeto, quando disponível. Para os exercícios sem documentação própria, utilize o compilador, interpretador ou ferramenta correspondente à linguagem.
+
+Arquivos executáveis, saídas de compilação e caches foram removidos; os códigos-fonte e arquivos de dados foram preservados.
