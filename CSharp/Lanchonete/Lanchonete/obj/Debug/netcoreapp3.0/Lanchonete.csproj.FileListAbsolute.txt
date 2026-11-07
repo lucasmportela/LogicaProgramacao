@@ -1,0 +1,14 @@
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\bin\Debug\netcoreapp3.0\Lanchonete.exe
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\bin\Debug\netcoreapp3.0\Lanchonete.deps.json
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\bin\Debug\netcoreapp3.0\Lanchonete.runtimeconfig.json
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\bin\Debug\netcoreapp3.0\Lanchonete.runtimeconfig.dev.json
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\bin\Debug\netcoreapp3.0\Lanchonete.dll
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\bin\Debug\netcoreapp3.0\Lanchonete.pdb
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\obj\Debug\netcoreapp3.0\Lanchonete.AssemblyInfoInputs.cache
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\obj\Debug\netcoreapp3.0\Lanchonete.AssemblyInfo.cs
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\obj\Debug\netcoreapp3.0\Lanchonete.dll
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\obj\Debug\netcoreapp3.0\Lanchonete.pdb
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\obj\Debug\netcoreapp3.0\Lanchonete.csproj.AssemblyReference.cache
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\obj\Debug\netcoreapp3.0\Lanchonete.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\obj\Debug\netcoreapp3.0\Lanchonete.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\Documents\Estácio\Trabson\Lanchonete\Lanchonete\obj\Debug\netcoreapp3.0\Lanchonete.genruntimeconfig.cache
