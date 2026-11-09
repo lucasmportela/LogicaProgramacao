@@ -33,8 +33,21 @@ O conteúdo está organizado por linguagem para facilitar a navegação.
 - Navegador moderno para HTML, CSS e JavaScript.
 - Bibliotecas OpenGL/GLUT para os projetos gráficos.
 
+## Testes automatizados em Python
+
+Os algoritmos de ordenação possuem testes automatizados com **pytest**. A suíte cobre Bubble Sort, Quick Sort, Insertion Sort, Merge Sort, Heap Sort, Radix Sort, Bucket Sort, Shell Sort e Tim Sort.
+
+Para executar os testes localmente, na raiz do repositório:
+
+```bash
+python -m pip install -r requirements-dev.txt
+python -m pytest tests/python -v
+```
+
+Os testes verificam listas vazias, elementos únicos e repetidos, entradas ordenadas e invertidas, números negativos nos algoritmos compatíveis, valores decimais no Bucket Sort e validações do Radix Sort. O Bogo Sort não faz parte da execução automatizada porque seu tempo de execução é aleatório e não possui limite prático.
+
+O GitHub Actions executa a suíte automaticamente em cada push e pull request para a branch `main`, além de verificar a sintaxe dos arquivos Python com `compileall`.
+
 ## Organização do repositório
 
 Foram removidos executáveis, arquivos de compilação, caches, pastas temporárias e arquivos ZIP internos. Os códigos-fonte e arquivos de dados foram mantidos.
-
-**Validação automatizada:** O GitHub Actions executa testes automatizados dos algoritmos de ordenação em Python e compila os projetos Java e C# configurados no workflow. Os demais exercícios não são executados automaticamente.
