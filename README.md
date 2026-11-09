@@ -35,18 +35,21 @@ O conteúdo está organizado por linguagem para facilitar a navegação.
 
 ## Testes automatizados em Python
 
-Os algoritmos de ordenação possuem testes automatizados com **pytest**. A suíte cobre Bubble Sort, Quick Sort, Insertion Sort, Merge Sort, Heap Sort, Radix Sort, Bucket Sort, Shell Sort e Tim Sort.
+Os algoritmos de ordenação possuem uma suíte automatizada com **pytest**. Atualmente, ela contém **102 casos de teste** para nove algoritmos: Bubble Sort, Quick Sort, Insertion Sort, Merge Sort, Heap Sort, Radix Sort, Bucket Sort, Shell Sort e Tim Sort.
 
-Para executar os testes localmente, na raiz do repositório:
+Para executar as verificações a partir da raiz do repositório:
 
 ```bash
 python -m pip install -r requirements-dev.txt
+python -m compileall -q .
 python -m pytest tests/python -v
 ```
 
-Os testes verificam listas vazias, elementos únicos e repetidos, entradas ordenadas e invertidas, números negativos nos algoritmos compatíveis, valores decimais no Bucket Sort e validações do Radix Sort. O Bogo Sort não faz parte da execução automatizada porque seu tempo de execução é aleatório e não possui limite prático.
+A suíte verifica listas vazias, elementos únicos e repetidos, listas ordenadas e invertidas, números negativos nos algoritmos compatíveis, valores decimais no Bucket Sort, validações de entrada do Radix Sort e preservação dos elementos. Também verifica que Merge Sort e Bucket Sort não alteram a lista original.
 
-O GitHub Actions executa a suíte automaticamente em cada push e pull request para a branch `main`, além de verificar a sintaxe dos arquivos Python com `compileall`.
+O Radix Sort aceita somente números inteiros não negativos. O Bucket Sort também é testado com valores negativos e decimais. O total de testes informado acima representa o estado atual da suíte e deve ser atualizado quando novos casos forem adicionados ou removidos.
+
+O GitHub Actions executa a verificação de sintaxe com `compileall` e os testes com `pytest` em cada push e pull request direcionado à branch `main`. A suíte, seus cenários e as orientações para atualizar esta documentação estão descritos em [tests/python/README.md](tests/python/README.md).
 
 ## Padrão de mensagens de commit
 
