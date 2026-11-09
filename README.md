@@ -48,6 +48,20 @@ Os testes verificam listas vazias, elementos únicos e repetidos, entradas orden
 
 O GitHub Actions executa a suíte automaticamente em cada push e pull request para a branch `main`, além de verificar a sintaxe dos arquivos Python com `compileall`.
 
+## Padrão de mensagens de commit
+
+Este repositório utiliza **Conventional Commits** para manter o histórico claro e facilitar a identificação de funcionalidades, correções, testes e documentação.
+
+Formato:
+
+```text
+tipo(escopo): descrição objetiva
+```
+
+Exemplos: `feat(python): adiciona busca binária`, `fix(python): corrige quick sort` e `test(python): amplia testes de ordenação`.
+
+Consulte [CONTRIBUTING.md](CONTRIBUTING.md) para conhecer os tipos recomendados e as orientações. O arquivo [`.gitmessage`](.gitmessage) oferece um modelo reutilizável para novos commits. Para ativá-lo neste repositório, execute `git config commit.template .gitmessage`.
+
 ## Organização do repositório
 
 Foram removidos executáveis, arquivos de compilação, caches, pastas temporárias e arquivos ZIP internos. Os códigos-fonte e arquivos de dados foram mantidos.
