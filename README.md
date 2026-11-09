@@ -37,4 +37,4 @@ O conteúdo está organizado por linguagem para facilitar a navegação.
 
 Foram removidos executáveis, arquivos de compilação, caches, pastas temporárias e arquivos ZIP internos. Os códigos-fonte e arquivos de dados foram mantidos.
 
-**Importante:** os projetos não foram executados nem testados nesta organização. Verifique as instruções e dependências de cada projeto antes de utilizá-los.
+**Validação automatizada:** O GitHub Actions executa testes automatizados dos algoritmos de ordenação em Python e compila os projetos Java e C# configurados no workflow. Os demais exercícios não são executados automaticamente.
