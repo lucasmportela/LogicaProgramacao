@@ -15,8 +15,6 @@ def bubble_sort(lista):
         if not houve_troca:
             break
     return lista
-    bubble_sort(lista)
-    print(lista)
 if __name__ == "__main__":
     lista = [0, 3, 1, 5, 19, 2, 55]
     print(bubble_sort(lista))
