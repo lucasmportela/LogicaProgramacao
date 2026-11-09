@@ -71,7 +71,7 @@ O workflow [`.github/workflows/ci.yml`](../../.github/workflows/ci.yml) executa:
 4. Instalação das dependências de desenvolvimento.
 5. Execução dos testes com `pytest`.
 
-A integração contínua é acionada em pushes e pull requests direcionados à branch `main), além de permitir execução manual pelo GitHub Actions.
+A integração contínua é acionada em pushes e pull requests direcionados à branch `main`, além de permitir execução manual pelo GitHub Actions.
 
 ## Como manter esta documentação atualizada
 
