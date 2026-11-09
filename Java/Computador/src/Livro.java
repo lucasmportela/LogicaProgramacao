@@ -49,11 +49,27 @@ public class Livro {
     }
 
 
-    public void entrada(){
+    public void entrada() {
 
         Scanner entrada = new Scanner(System.in);
 
-        System.out.println("\n-----Dados do Livro------");
-        System.out.println("Codigo: "+ );
+        System.out.println("\n----- Dados do Livro -----");
+
+        System.out.println("Código: ");
+        setCodigo(entrada.nextInt());
+
+        System.out.println("Peso: ");
+        setPeso(entrada.nextDouble());
+
+        System.out.println("Preço: ");
+        setPreco(entrada.nextDouble());
+
+        entrada.nextLine();
+
+        System.out.println("Autor: ");
+        setAutor(entrada.nextLine());
+
+        System.out.println("Descrição: ");
+        setDescricao(entrada.nextLine());
     }
 }
