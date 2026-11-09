@@ -49,9 +49,7 @@ public class Livro {
     }
 
 
-    public void entrada() {
-
-        Scanner entrada = new Scanner(System.in);
+        public void entrada(Scanner entrada) {
 
         System.out.println("\n----- Dados do Livro -----");
 

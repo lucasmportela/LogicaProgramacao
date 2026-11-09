@@ -46,23 +46,23 @@ public class CD {
         this.banda = banda;
     }
 
-    public void entrada (){
+        public void entrada(Scanner entrada) {
 
-        Scanner entrada = new Scanner (System.in);
-
-        System.out.println("\n-------Dados do CD--------");
+        System.out.println("\n------- Dados do CD --------");
 
         System.out.println("Código: ");
-        setCodigo( entrada.nextInt());
+        setCodigo(entrada.nextInt());
 
         System.out.println("Peso: ");
         setPeso(entrada.nextDouble());
 
         System.out.println("Preço: ");
-       setPreco(entrada.nextDouble());
+        setPreco(entrada.nextDouble());
+
+        entrada.nextLine();
 
         System.out.println("Banda: ");
-        setBanda(entrada.next());
+        setBanda(entrada.nextLine());
 
         System.out.println("Descrição: ");
         setDescricao(entrada.nextLine());
