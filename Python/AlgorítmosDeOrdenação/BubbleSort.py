@@ -1,5 +1,3 @@
-if __name__ == "__main__":
-    lista = [0,3,1,5,19,2,55]
 
 def bubble_sort(lista):
     tamanho = len(lista)
