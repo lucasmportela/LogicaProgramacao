@@ -29,9 +29,21 @@ O conteúdo está organizado por linguagem para facilitar a navegação.
 - Python 3 para os projetos Python.
 - JDK para os projetos Java.
 - GCC/MinGW ou outro compilador C/C++ para C e C++.
-- .NET SDK para os projetos C#.
+- .NET 10 SDK ou superior para os projetos C#.
 - Navegador moderno para HTML, CSS e JavaScript.
 - Bibliotecas OpenGL/GLUT para os projetos gráficos.
+
+## Projetos C#
+
+Os três projetos C# utilizam **.NET 10 (LTS)**. Para compilar todos, execute a partir da raiz:
+
+```bash
+dotnet build "CSharp/Calculadora/teste.csproj" --configuration Release
+dotnet build "CSharp/Lanchonete/Lanchonete/Lanchonete.csproj" --configuration Release
+dotnet build "CSharp/Média/teste.csproj" --configuration Release
+```
+
+Consulte [CSharp/README.md](CSharp/README.md) para os comandos de execução.
 
 ## Testes automatizados em Python
 
