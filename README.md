@@ -29,7 +29,6 @@ O conteúdo está organizado por linguagem para facilitar a navegação.
 - GCC/MinGW ou outro compilador C/C++ para C e C++.
 - .NET SDK para os projetos C#.
 - Navegador moderno para HTML, CSS e JavaScript.
-- PHP para os projetos PHP.
 - Bibliotecas OpenGL/GLUT para os projetos gráficos.
 
 ## Organização do repositório

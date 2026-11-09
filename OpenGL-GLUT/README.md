@@ -2,12 +2,6 @@
 
 Exercícios e projetos desenvolvidos em **C/C++ com OpenGL e GLUT**.
 
-## Conteúdo
-
-- `build/`
-- `Graphics program/`
-- `Quadrado/`
-
 ## Execução
 
 Consulte o README de cada projeto, quando disponível. Para os exercícios sem documentação própria, utilize o compilador, interpretador ou ferramenta correspondente à linguagem.

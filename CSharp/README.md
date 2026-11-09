@@ -7,8 +7,6 @@ Exercícios e projetos desenvolvidos em **C#**.
 - `Calculadora/`
 - `Lanchonete/`
 - `Média/`
-- `FichaAluno.c`
-- `Untitled-1.c`
 
 ## Execução
 
