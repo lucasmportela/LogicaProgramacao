@@ -1,5 +1,7 @@
 # Portfólio de Estudos e Projetos de Programação
 
+[![CI](https://github.com/lucasmportela/LogicaProgramacao/actions/workflows/ci.yml/badge.svg)](https://github.com/lucasmportela/LogicaProgramacao/actions/workflows/ci.yml)
+
 Repositório de exercícios, estudos e pequenos projetos desenvolvidos durante minha formação em programação.
 
 O conteúdo está organizado por linguagem para facilitar a navegação.
