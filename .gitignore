@@ -1,0 +1,23 @@
+# C# / .NET
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+*.pdb
+
+# Java
+*.class
+
+# OpenGL / C e C++
+**/build/
+
+# IDEs e sistema operacional
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.tmp
+*.log

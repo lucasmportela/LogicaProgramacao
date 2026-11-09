@@ -1,0 +1,37 @@
+#include <dos.h>
+#include <stdio.h>
+union REGS in, out;
+
+
+int main( )
+
+{
+  
+
+    while (!kbhit ( ) ) //Enquanto o teclado não é acionado
+
+    {
+
+        int x,y;
+
+        in.x.ax = 3; //Invoca a interrupção do mouse
+
+        int86 (0X33, &in, &out);
+
+        if (out.x.bx == 1) //Se botão esquerdo do mouse apertado
+
+        {
+
+            x = out.x.cx; //Coordenada x no registro cx
+
+            y = out.x.dx; //Coordenada y no registro dx
+
+            printf ("\nPosicao || X - %dY - %d", x, y);
+
+        }
+
+    delay (200);
+
+    }
+
+}

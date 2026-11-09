@@ -1,0 +1,65 @@
+name: CI - LogicaProgramacao
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  java:
+    name: Compilar projetos Java
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Configurar Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Compilar exercícios Java
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          while IFS= read -r -d '' source_dir; do
+            mapfile -d '' java_files < <(
+              find "$source_dir" -type f -name '*.java' -print0
+            )
+
+            if ((${#java_files[@]})); then
+              echo "Compilando: $source_dir"
+              output_dir="$(mktemp -d)"
+              javac -encoding UTF-8 -d "$output_dir" "${java_files[@]}"
+            fi
+          done < <(find Java -type d -name src -print0)
+
+  csharp:
+    name: Compilar projetos C#
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar código
+        uses: actions/checkout@v4
+
+      - name: Configurar .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Compilar Calculadora
+        run: dotnet build "CSharp/Calculadora/teste.csproj" --configuration Release
+
+      - name: Compilar Lanchonete
+        run: dotnet build "CSharp/Lanchonete/Lanchonete/Lanchonete.csproj" --configuration Release
+
+      - name: Compilar Média
+        run: dotnet build "CSharp/Média/teste.csproj" --configuration Release
