@@ -53,7 +53,7 @@ Os projetos C# possuem **50 casos de teste com xUnit** para a calculadora, a lan
 dotnet test "CSharp/tests/CSharp.Tests.csproj" --configuration Release
 ```
 
-Os exercícios Java compartilham regras testáveis em `Java/common` e possuem **32 testes com JUnit 5** para conversão de temperatura, IMC, números primos, crédito bancário, conta de hotel e somatório:
+Os exercícios Java compartilham regras testáveis em `Java/common` e possuem **33 testes com JUnit 5** para conversão de temperatura, IMC, números primos, crédito bancário, conta de hotel e somatório:
 
 ```bash
 mvn -B -f Java/tests/pom.xml test
