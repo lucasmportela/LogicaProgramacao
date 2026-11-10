@@ -5,4 +5,6 @@ class VerificadorPrimoTest {
  @Test void reconhecePrimos() { assertTrue(VerificadorPrimo.isPrimo(2)); assertTrue(VerificadorPrimo.isPrimo(3)); assertTrue(VerificadorPrimo.isPrimo(97)); }
  @Test void rejeitaMenoresQueDois() { assertFalse(VerificadorPrimo.isPrimo(-7)); assertFalse(VerificadorPrimo.isPrimo(0)); assertFalse(VerificadorPrimo.isPrimo(1)); }
  @Test void rejeitaCompostos() { assertFalse(VerificadorPrimo.isPrimo(4)); assertFalse(VerificadorPrimo.isPrimo(9)); assertFalse(VerificadorPrimo.isPrimo(25)); }
+ @Test void reconheceMaiorInteiroPrimo() { assertTrue(VerificadorPrimo.isPrimo(Integer.MAX_VALUE)); }
+ @Test void rejeitaMaiorInteiroPar() { assertFalse(VerificadorPrimo.isPrimo(Integer.MAX_VALUE - 1)); }
 }
