@@ -3,31 +3,27 @@
 Exercícios e projetos desenvolvidos em **C#**.
 
 ## Conteúdo
-
 - `Calculadora/`
 - `Lanchonete/`
 - `Média/`
+- `tests/` — testes automatizados com xUnit.
 
 ## Requisitos
-
 - .NET 10 SDK ou superior.
 
 ## Compilação e execução
-
-A partir da raiz do repositório, compile cada projeto com:
+A partir da raiz do repositório:
 
 ```bash
 dotnet build "CSharp/Calculadora/teste.csproj" --configuration Release
 dotnet build "CSharp/Lanchonete/Lanchonete/Lanchonete.csproj" --configuration Release
 dotnet build "CSharp/Média/teste.csproj" --configuration Release
-```
-
-Para executar um projeto, utilize `dotnet run --project` seguido do caminho do arquivo `.csproj`. Exemplo:
-
-```bash
 dotnet run --project "CSharp/Calculadora/teste.csproj"
 ```
 
-Todos os projetos C# deste repositório utilizam o target framework `net10.0`.
+## Testes automatizados
+A suíte xUnit cobre as operações da calculadora, preços e totais da lanchonete, validações e classificação da média escolar.
 
-Arquivos executáveis, saídas de compilação e caches foram removidos; os códigos-fonte e arquivos de dados foram preservados.
+```bash
+dotnet test "CSharp/tests/CSharp.Tests.csproj" --configuration Release
+```

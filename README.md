@@ -45,6 +45,22 @@ dotnet build "CSharp/Média/teste.csproj" --configuration Release
 
 Consulte [CSharp/README.md](CSharp/README.md) para os comandos de execução.
 
+## Testes automatizados em C# e Java
+
+Os projetos C# possuem testes com **xUnit** para a calculadora, a lanchonete e a média escolar:
+
+```bash
+dotnet test "CSharp/tests/CSharp.Tests.csproj" --configuration Release
+```
+
+Os exercícios Java compartilham regras testáveis em `Java/common` e possuem uma suíte **JUnit 5** para conversão de temperatura, IMC, números primos, crédito bancário, conta de hotel e somatório:
+
+```bash
+mvn -B -f Java/tests/pom.xml test
+```
+
+O GitHub Actions compila os projetos C# e Java e executa as duas suítes a cada push e pull request direcionado à branch `main`.
+
 ## Testes automatizados em Python
 
 Os algoritmos de ordenação possuem uma suíte automatizada com **pytest**. Atualmente, ela contém **102 casos de teste** para nove algoritmos: Bubble Sort, Quick Sort, Insertion Sort, Merge Sort, Heap Sort, Radix Sort, Bucket Sort, Shell Sort e Tim Sort.

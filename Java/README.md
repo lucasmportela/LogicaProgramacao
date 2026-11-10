@@ -3,7 +3,6 @@
 Exercícios e projetos desenvolvidos em **Java**.
 
 ## Conteúdo
-
 - `Alunos/`
 - `Atleta/`
 - `caneta/`
@@ -22,9 +21,20 @@ Exercícios e projetos desenvolvidos em **Java**.
 - `SalarioMinimo/`
 - `SomatorioNumeros/`
 - `ValorCredito/`
+- `common/` — regras reutilizáveis.
+- `tests/` — testes automatizados com JUnit 5.
 
-## Execução
+## Requisitos
+- JDK 17 ou superior.
+- Maven 3.9 ou superior para executar os testes.
 
-Consulte o README de cada projeto, quando disponível. Para os exercícios sem documentação própria, utilize o compilador, interpretador ou ferramenta correspondente à linguagem.
+## Testes automatizados
+Os testes JUnit cobrem conversão de temperatura, IMC, números primos, crédito bancário, conta de hotel e somatório.
 
-Arquivos executáveis, saídas de compilação e caches foram removidos; os códigos-fonte e arquivos de dados foram preservados.
+A partir da raiz do repositório:
+
+```bash
+mvn -B -f Java/tests/pom.xml test
+```
+
+Os exercícios que utilizam regras compartilhadas importam as classes de `Java/common`. O GitHub Actions compila cada exercício Java separadamente e executa a suíte JUnit.

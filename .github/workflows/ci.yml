@@ -1,4 +1,3 @@
-
 name: CI - LogicaProgramacao
 
 on:
@@ -15,78 +14,75 @@ jobs:
   python:
     name: Testar projetos Python
     runs-on: ubuntu-latest
-
     steps:
       - name: Baixar código
         uses: actions/checkout@v4
-
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: requirements-dev.txt
-
-      - name: Verificar sintaxe de todos os arquivos Python    
+      - name: Verificar sintaxe de todos os arquivos Python
         run: python -m compileall -q .
-  
       - name: Instalar dependências
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements-dev.txt
-
       - name: Executar testes Python
         run: python -m pytest tests/python -v
 
   java:
-    name: Compilar projetos Java
+    name: Testar e compilar Java
     runs-on: ubuntu-latest
-
     steps:
       - name: Baixar código
         uses: actions/checkout@v4
-
-      - name: Configurar Java
+      - name: Configurar Java e Maven
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
-
+          java-version: "17"
+          cache: maven
+          cache-dependency-path: Java/tests/pom.xml
+      - name: Compilar regras compartilhadas
+        shell: bash
+        run: |
+          set -euo pipefail
+          common_output="$(mktemp -d)"
+          mapfile -d '' common_files < <(find Java/common/src/main/java -type f -name '*.java' -print0)
+          javac -encoding UTF-8 -d "$common_output" "${common_files[@]}"
+          echo "JAVA_COMMON_OUTPUT=$common_output" >> "$GITHUB_ENV"
       - name: Compilar exercícios Java
         shell: bash
         run: |
           set -euo pipefail
-
           while IFS= read -r -d '' source_dir; do
-            mapfile -d '' java_files < <(
-              find "$source_dir" -type f -name '*.java' -print0
-            )
-
-            if ((${#java_files[@]})); then
+            mapfile -d '' java_files < <(find "$source_dir" -type f -name '*.java' -print0)
+            if (("${#java_files[@]}")); then
               echo "Compilando: $source_dir"
               output_dir="$(mktemp -d)"
-              javac -encoding UTF-8 -d "$output_dir" "${java_files[@]}"
+              javac -encoding UTF-8 -cp "$JAVA_COMMON_OUTPUT" -d "$output_dir" "${java_files[@]}"
             fi
-          done < <(find Java -type d -name src -print0)
+          done < <(find Java -type d -name src ! -path "Java/common/*" ! -path "Java/tests/*" -print0)
+      - name: Executar testes Java com JUnit 5
+        run: mvn -B -f Java/tests/pom.xml test
 
   csharp:
-    name: Compilar projetos C#
+    name: Testar e compilar C#
     runs-on: ubuntu-latest
-
     steps:
       - name: Baixar código
         uses: actions/checkout@v4
-
       - name: Configurar .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '10.0.x'
-
+          dotnet-version: "10.0.x"
       - name: Compilar Calculadora
         run: dotnet build "CSharp/Calculadora/teste.csproj" --configuration Release
-
       - name: Compilar Lanchonete
         run: dotnet build "CSharp/Lanchonete/Lanchonete/Lanchonete.csproj" --configuration Release
-
       - name: Compilar Média
         run: dotnet build "CSharp/Média/teste.csproj" --configuration Release
+      - name: Executar testes C# com xUnit
+        run: dotnet test "CSharp/tests/CSharp.Tests.csproj" --configuration Release
