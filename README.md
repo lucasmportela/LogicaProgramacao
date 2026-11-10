@@ -47,13 +47,13 @@ Consulte [CSharp/README.md](CSharp/README.md) para os comandos de execução.
 
 ## Testes automatizados em C# e Java
 
-Os projetos C# possuem testes com **xUnit** para a calculadora, a lanchonete e a média escolar:
+Os projetos C# possuem **29 casos de teste com xUnit** para a calculadora, a lanchonete e a média escolar:
 
 ```bash
 dotnet test "CSharp/tests/CSharp.Tests.csproj" --configuration Release
 ```
 
-Os exercícios Java compartilham regras testáveis em `Java/common` e possuem uma suíte **JUnit 5** para conversão de temperatura, IMC, números primos, crédito bancário, conta de hotel e somatório:
+Os exercícios Java compartilham regras testáveis em `Java/common` e possuem **27 testes com JUnit 5** para conversão de temperatura, IMC, números primos, crédito bancário, conta de hotel e somatório:
 
 ```bash
 mvn -B -f Java/tests/pom.xml test
