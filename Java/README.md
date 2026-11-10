@@ -29,7 +29,7 @@ Exercícios e projetos desenvolvidos em **Java**.
 - Maven 3.9 ou superior para executar os testes.
 
 ## Testes automatizados
-Os 32 testes JUnit cobrem conversão de temperatura, IMC, números primos, crédito bancário, conta de hotel e somatório.
+Os 33 testes JUnit cobrem conversão de temperatura, IMC, números primos, crédito bancário, conta de hotel e somatório.
 
 A partir da raiz do repositório:
 
