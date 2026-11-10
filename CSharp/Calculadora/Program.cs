@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace myproject
 {
@@ -6,56 +6,47 @@ namespace myproject
     {
         static void Main(string[] args)
         {
-            double result = 0, a, b = 0;
-            string oper, sair = "a";
-
-            while (sair != "S")
+            bool sair = false;
+            while (!sair)
             {
-                Console.WriteLine("Escolha uma operação:");
-                Console.WriteLine("+ = soma");
-                Console.WriteLine("- = subtração");
-                Console.WriteLine("* = multiplicação");
-                Console.WriteLine("/ = divisão");
-                oper = Console.ReadLine();
-                if (oper == "VITOR")
-                    {
-                        Console.WriteLine("Muito feio filho");
-                        Console.ReadKey();
-                        sair = "S";
-                    }
-
-                while (sair != "S")
+                Console.WriteLine("Escolha uma operação: +, -, * ou /");
+                string operacao = Console.ReadLine() ?? "";
+                if (operacao.Equals("VITOR", StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.Clear();
-                    Console.WriteLine("Operador A:");
-                    a = Convert.ToDouble(Console.ReadLine());
-                    Console.WriteLine("Operador B:");
-                    b = Convert.ToDouble(Console.ReadLine());
-                    if (oper == "+")
-                    {
-                        result = a + b;
-                    }
-                    else if (oper == "-")
-                    {
-                        result = a - b;
-                    }
-                    else if (oper == "*")
-                    {
-                        result = a * b;
-                    }
-                    else if (oper == "/")
-                    {
-                        result = a / b;
-                    }
-                    Console.WriteLine("O resultado é: " + result.ToString("F2"));
-                    Console.WriteLine("Deseja sair? S|N");
-                    sair = Console.ReadLine();
+                    Console.WriteLine("Muito feio filho");
+                    break;
                 }
-                Console.Clear();
-                sair = "a";
+
+                Console.WriteLine("Operador A:");
+                if (!double.TryParse(Console.ReadLine(), out double a))
+                {
+                    Console.WriteLine("Valor inválido.");
+                    continue;
+                }
+
+                Console.WriteLine("Operador B:");
+                if (!double.TryParse(Console.ReadLine(), out double b))
+                {
+                    Console.WriteLine("Valor inválido.");
+                    continue;
+                }
+
+                try
+                {
+                    double resultado = Calculadora.Calcular(a, b, operacao);
+                    Console.WriteLine("O resultado é: " + resultado.ToString("F2"));
+                }
+                catch (DivideByZeroException)
+                {
+                    Console.WriteLine("Erro: divisão por zero.");
+                }
+                catch (ArgumentException)
+                {
+                    Console.WriteLine("Operação inválida.");
+                }
+
                 Console.WriteLine("Deseja sair? S|N");
-                sair = Console.ReadLine();
-                Console.Clear();
+                sair = string.Equals(Console.ReadLine()?.Trim(), "S", StringComparison.OrdinalIgnoreCase);
             }
         }
     }
