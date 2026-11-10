@@ -12,6 +12,8 @@ public class CalculadoraTests
     [InlineData(4, 3, "*", 12)]
     [InlineData(12, 3, "/", 4)]
     [InlineData(-5, 2, "+", -3)]
+    [InlineData(0, 2, "/", 0)]
+    [InlineData(-10, 2, "/", -5)]
     public void Calcular_DeveExecutarOperacoesValidas(double a, double b, string operacao, double esperado)
     {
         Assert.Equal(esperado, Calculadora.Calcular(a, b, operacao), 8);
@@ -23,9 +25,11 @@ public class CalculadoraTests
         Assert.Throws<DivideByZeroException>(() => Calculadora.Calcular(10, 0, "/"));
     }
 
-    [Fact]
-    public void Calcular_OperacaoDesconhecida_DeveLancarExcecao()
+    [Theory]
+    [InlineData("%")]
+    [InlineData("")]
+    public void Calcular_OperacaoDesconhecida_DeveLancarExcecao(string operacao)
     {
-        Assert.Throws<ArgumentException>(() => Calculadora.Calcular(2, 2, "%"));
+        Assert.Throws<ArgumentException>(() => Calculadora.Calcular(2, 2, operacao));
     }
 }
