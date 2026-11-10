@@ -22,7 +22,7 @@ dotnet run --project "CSharp/Calculadora/teste.csproj"
 ```
 
 ## Testes automatizados
-A suíte xUnit possui 29 casos e cobre as operações da calculadora, preços e totais da lanchonete, validações e classificação da média escolar.
+A suíte xUnit possui 50 casos e cobre as operações da calculadora, preços e totais da lanchonete, validações e classificação da média escolar.
 
 ```bash
 dotnet test "CSharp/tests/CSharp.Tests.csproj" --configuration Release
